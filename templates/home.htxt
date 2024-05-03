@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fake News📰 Detection System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    @media (max-width: 768px) {
+      .login {
+        width: 80%;
+        height: auto;
+        margin: 10% auto;
+      }
+
+      .features {
+        width: 100%;
+      }
+
+      .features .feature {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+
+      .features .feature:nth-child(2n) {
+        margin-left: 5%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .login {
+        width: 90%;
+      }
+
+      .features .feature {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    .login img {
+      width: 100%;
+      height: auto;
+    }
+
+    .login p {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .feature {
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .feature i {
+      font-size: 48px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="login">
+    <h1>Fake News📰 Detector</h1>
+    <img src="path/to/your/image.jpg" alt="Fake News Detector Image">
+    <p>Welcome to our Fake News Detector! Our state-of-the-art AI system helps you identify fake news and stay informed. Click the button below to start the prediction process.</p>
+    <a href="{{ url_for('predict') }}" class="btn btn-primary btn-block btn-large">Start Prediction</a>
+  </div>
+  <div class="features">
+    <div class="feature">
+      <i class="fas fa-check"></i>
+      <h3>Accurate Predictions</h3>
+      <p>Our AI system uses advanced algorithms to accurately detect fake news.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-exclamation-triangle"></i>
+      <h3>Real-time Alerts</h3>
+      <p>Get real-time alerts when fake news is detected.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-cogs"></i>
+      <h3>Customizable Settings</h3>
+      <p>Customize your settings to suit your needs.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-lock"></i>
+      <h3>Secure and Private</h3>
+      <p>Your data is secure and private with us.</p>
+    </div>
+  </div>
+</body>
+</html>
